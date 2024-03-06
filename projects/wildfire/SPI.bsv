@@ -34,7 +34,7 @@ module mkSPIMaster(SPIMaster);
 	let clock <- exposeCurrentClock();
 	// registers for the interface pins
 	Reg#(Bit#(1)) sclkReg <- mkReg(0);
-    Reg#(Bit#(16)) sclkDiv <- mkReg(1);
+    Reg#(Bit#(16)) sclkDiv <- mkReg(2);
     Wire#(Bit#(1)) misoWire <- mkDWire(0);
     Reg#(Bit#(1)) misoReg <- mkReg(0);
     Reg#(Bit#(1)) ncsReg <- mkReg(1);
